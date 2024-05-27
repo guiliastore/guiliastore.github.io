@@ -61,6 +61,10 @@ p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.link-button i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
 .link-button:hover {
     background-color: #795e2d;
     transform: translateY(-3px);
