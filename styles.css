@@ -70,3 +70,28 @@ p {
     background-color: #634e27;
     transform: translateY(0);
 }
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .link-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
