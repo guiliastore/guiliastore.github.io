@@ -31,6 +31,19 @@ body {
     padding: 30px;
 }
 
+.social-icons {
+    margin: 20px 0;
+}
+.social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+    color: #000000;
+}
+.social-icons i {
+    width: 30px;
+    height: 30px;
+}
+
 h1 {
     margin: 10px 0 5px;
     font-size: 1.8em;
@@ -55,7 +68,7 @@ p {
     color: #ffffff;
     background-color: #ae8c4c;
     padding: 15px 20px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 1em;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
