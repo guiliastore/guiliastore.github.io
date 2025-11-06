@@ -1,52 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="refresh" content="0;url=https://www.guiliastore.com"> -->
-    <title>Guilia Store Links</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="logo-container">
-            <img src="Guilia-logo-completo.png" alt="Your Name" class="profile-picture">
-        </div>
-        <h1>Welcome!</h1>
-        <!-- <p>Welcome!</p> -->
+    <title>Guilia Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --color-primary: #6C4B36;
+            /* Dark Mocha */
+            --color-text-dark: #3B2B22;
+            /* Charcoal Brown */
+            --color-bg-light: #F3E9E1;
+            /* Cream Beige */
+            --color-soft-neutral: #DCC2A2;
+            /* Warm Sand */
+            --color-accent: #A49484;
+            /* Warm Grey */
+            --color-light-neutral: #FFF9F5;
+            /* Off-White */
+            --color-soft-taupe: #BFA58A;
+            /* Soft Taupe */
+        }
 
-        <div class="links">
-            <a href="https://guiliastore.com" target="_blank" class="link-button">
-                <i class="fa-solid fa-bag-shopping"></i>
-                Online Shop
-            </a>
-            <a href="https://www.instagram.com/guiliastore" target="_blank" class="link-button">
-                <i class="fab fa-instagram"></i>
-                Instagram
-            </a>
-            <a href="https://www.tiktok.com/@guiliastore" target="_blank" class="link-button">
-                <i class="fab fa-tiktok"></i>
-                TikTok
-            </a>
-            <a href="https://wa.me/+351910891732" target="_blank" class="link-button">
-                <i class="fab fa-whatsapp"></i>
-                Whatsapp
-            </a>
-            <a href="https://www.facebook.com/guiliastore" target="_blank" class="link-button">
-                <i class="fab fa-facebook-f"></i>
-                Facebook
-            </a>
-            <a href="https://www.youtube.com/@guiliastore" target="_blank" class="link-button">
-                <i class="fab fa-youtube"></i>
-                YouTube
-            </a>
-            <a href="mailto:support@guiliastore.com" class="link-button">
-                <i class="fa-solid fa-envelope"></i>
-                Customer Service
+        /* Soft fade-in up animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        /* Slide-in left animation */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            animation: slideInLeft 1s ease forwards;
+        }
+
+        /* Slide-in right animation */
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            animation: slideInRight 1s ease forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+    <header class="bg-[var(--color-light-neutral)] py-6 flex justify-center fade-in-up">
+        <svg class="h-16 md:h-24" version="1.1" id="svg1" width="1323.7268" height="403.4328"
+            viewBox="0 0 1323.7267 403.43279" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+            <defs id="defs1" />
+            <g id="g1" transform="translate(-113.95791,-658.22762)">
+                <g style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" id="g16"
+                    transform="translate(628.51837,801.83337)">
+                    <path
+                        d="M 85.483297,22.779843 V 6.2941047 h 12.2119 V 91.777402 c 0,13.514498 -4.762316,25.034718 -14.288249,34.559348 -9.52463,9.52593 -21.044848,14.28825 -34.55935,14.28825 -13.514502,0 -25.034719,-4.76232 -34.55935,-14.28825 -3.175745,-3.17444 -5.821331,-6.55339 -7.9380602,-10.13555 H 21.615388 c 0.406412,0.48848 0.854507,0.97695 1.342983,1.46543 7.164315,7.16431 15.794057,10.74647 25.889227,10.74647 10.095171,0 18.724913,-3.58216 25.889227,-10.74647 7.164315,-7.16432 10.746472,-15.79406 10.746472,-25.889228 v -4.273839 c -0.651301,0.732062 -1.342983,1.465427 -2.076349,2.19749 -9.52463,9.525933 -21.044848,14.288247 -34.55935,14.288247 -13.514502,0 -25.034719,-4.762314 -34.55935,-14.288247 C 4.7623152,80.176423 0,68.656205 0,55.141703 0,41.627201 4.7623152,30.106983 14.288248,20.582353 23.812879,11.05642 35.333096,6.2941047 48.847598,6.2941047 c 13.514502,0 25.03472,4.7623153 34.55935,14.2882483 0.733366,0.732063 1.425048,1.465428 2.076349,2.19749 z m 0,32.727891 V 54.775672 C 85.402536,44.843327 81.820378,36.336029 74.736825,29.252476 67.572511,22.088161 58.942769,18.506004 48.847598,18.506004 c -10.09517,0 -18.724912,3.582157 -25.889227,10.746472 C 15.794057,36.41679 12.2119,45.046533 12.2119,55.141703 c 0,10.09517 3.582157,18.724913 10.746471,25.889227 7.164315,7.164315 15.794057,10.746472 25.889227,10.746472 10.095171,0 18.724913,-3.582157 25.889227,-10.746472 7.083553,-7.08225 10.665711,-15.590851 10.746472,-25.523196 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path1-5" />
+                    <path
+                        d="M 132.62188,91.533815 C 124.31779,83.147659 120.16509,73.052489 120.16509,61.248304 V 6.2941047 h 12.2119 V 61.248304 c 0,8.466917 2.97254,15.671612 8.91501,21.614085 5.94378,5.943776 13.14847,8.915013 21.61539,8.915013 8.46692,0 15.67161,-2.971237 21.61539,-8.915013 5.94247,-5.942473 8.91371,-13.147168 8.91371,-21.614085 V 6.2941047 h 12.2119 V 61.248304 c 0,11.804185 -4.17224,21.878514 -12.51671,30.224289 -8.34447,8.344472 -18.4201,12.516707 -30.22429,12.516707 -11.80549,0 -21.90066,-4.151393 -30.28551,-12.455485 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path2-8" />
+                    <path
+                        d="m 224.94384,6.2941047 h 12.2119 V 103.9893 h -12.2119 z m 6.1066,-13.7997722 c -2.11673,0 -3.90781,-0.7320626 -5.37323,-2.1974906 -1.46543,-1.4654279 -2.1988,-3.2565069 -2.1988,-5.3732359 0,-2.116729 0.73337,-3.928649 2.1988,-5.434458 1.46542,-1.505809 3.2565,-2.258713 5.37323,-2.258713 2.11673,0 3.92865,0.752904 5.43446,2.258713 1.50581,1.505809 2.25871,3.317729 2.25871,5.434458 0,2.116729 -0.7529,3.907808 -2.25871,5.3732359 -1.50581,1.465428 -3.31773,2.1974906 -5.43446,2.1974906 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path3" />
+                    <rect x="261.94687" y="-42.553493" width="12.2119" height="146.5428"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="rect3" />
+                    <path
+                        d="m 296.50753,6.2941047 h 12.2119 V 103.9893 h -12.2119 z m 6.1053,-13.7997722 c -2.11673,0 -3.90781,-0.7320626 -5.37324,-2.1974906 -1.46543,-1.4654279 -2.19749,-3.2565069 -2.19749,-5.3732359 0,-2.116729 0.73206,-3.928649 2.19749,-5.434458 1.46543,-1.505809 3.25651,-2.258713 5.37324,-2.258713 2.11672,0 3.92864,0.752904 5.43445,2.258713 1.50711,1.505809 2.26002,3.317729 2.26002,5.434458 0,2.116729 -0.75291,3.907808 -2.26002,5.3732359 -1.50581,1.465428 -3.31773,2.1974906 -5.43445,2.1974906 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path4" />
+                    <path
+                        d="m 410.07884,55.507734 v -0.732062 c -0.0821,-9.932345 -3.66422,-18.439643 -10.74647,-25.523196 -7.16431,-7.164315 -15.79405,-10.746472 -25.88922,-10.746472 -10.09517,0 -18.72492,3.582157 -25.88923,10.746472 -7.16432,7.164314 -10.74647,15.794057 -10.74647,25.889227 0,10.09517 3.58215,18.724913 10.74647,25.889227 7.16431,7.164315 15.79406,10.746472 25.88923,10.746472 10.09517,0 18.72491,-3.582157 25.88922,-10.746472 7.08225,-7.08225 10.66441,-15.590851 10.74647,-25.523196 z m 12.2119,48.481566 h -12.2119 V 87.503563 c -0.6513,0.732062 -1.34298,1.465427 -2.07634,2.19749 -9.52463,9.525933 -21.04485,14.288247 -34.55935,14.288247 -13.51451,0 -25.03472,-4.762314 -34.55935,-14.288247 -9.52594,-9.52463 -14.28825,-21.044848 -14.28825,-34.55935 0,-13.514502 4.76231,-25.03472 14.28825,-34.55935 9.52463,-9.525933 21.04484,-14.2882483 34.55935,-14.2882483 13.5145,0 25.03472,4.7623153 34.55935,14.2882483 0.73336,0.732063 1.42504,1.465428 2.07634,2.19749 V 6.2941047 h 12.2119 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path5" />
+                    <path
+                        d="m 451.5993,49.52488 c -5.53606,-3.012919 -9.23936,-7.531648 -11.1125,-13.556185 -0.73206,-2.279555 -1.0994,-4.559109 -1.0994,-6.838664 0,-3.582157 0.93657,-7.122631 2.80972,-10.624027 2.93085,-5.536061 7.44828,-9.2406627 13.55488,-11.1125027 2.27955,-0.6513013 4.51873,-0.976952 6.71622,-0.976952 3.66422,0 7.24638,0.894888 10.74647,2.6859667 5.53606,2.930856 9.24066,7.409204 11.1125,13.433741 l 0.48848,2.19749 -11.72342,4.030253 c 0,-0.814127 -0.12115,-1.709015 -0.36604,-2.685967 -0.89488,-2.76803 -2.64558,-4.803998 -5.25079,-6.106601 -1.71031,-0.976952 -3.45971,-1.465428 -5.25079,-1.465428 -0.97695,0 -2.42284,0.304809 -4.33506,0.91573 -1.91352,0.610921 -3.56262,2.218332 -4.94598,4.823537 -0.89619,1.710318 -1.34429,3.419332 -1.34429,5.12965 0,0.976952 0.16283,1.994284 0.48848,3.0533 0.89619,2.768031 2.64689,4.88476 5.25209,6.350188 l 19.90507,10.501582 c 7.08225,3.744983 11.80419,9.443869 14.16581,17.09666 0.89488,2.930855 1.34298,5.78095 1.34298,8.548981 0,4.63987 -1.18016,9.158599 -3.54178,13.554882 -3.82574,7.082251 -9.56501,11.804186 -17.2178,14.165806 -2.93085,0.89489 -5.82133,1.34298 -8.67142,1.34298 -4.55911,0 -8.99578,-1.13978 -13.31,-3.41933 -7.08355,-3.825744 -11.80548,-9.566314 -14.1658,-17.219105 -0.57054,-1.87184 -0.97695,-3.703299 -1.22184,-5.494378 l 12.08945,-2.809713 c 0.0821,1.547492 0.36734,3.135364 0.85581,4.763617 1.38337,4.477046 4.11102,7.773933 8.18165,9.890662 2.44238,1.384667 4.96552,2.076349 7.57073,2.076349 1.71031,0 4.11231,-0.488476 7.20599,-1.465428 3.09369,-0.976952 5.73927,-3.500093 7.93676,-7.570727 1.3026,-2.44238 1.95391,-5.007204 1.95391,-7.694473 0,-1.628254 -0.46764,-3.98857 -1.40421,-7.082251 -0.93527,-3.093681 -3.43887,-5.698886 -7.5095,-7.815616 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path6" />
+                    <path
+                        d="M 518.27693,6.2941047 V -42.553494 h 12.2119 V 6.2941047 h 24.42379 V 18.506004 H 530.48883 V 103.9893 h -12.2119 V 18.506004 h -24.4238 V 6.2941047 Z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path7" />
+                    <path
+                        d="m 600.46464,91.777402 c 10.09517,0 18.72491,-3.582157 25.88923,-10.746472 7.16431,-7.164314 10.74647,-15.794057 10.74647,-25.889227 0,-10.09517 -3.58216,-18.724913 -10.74647,-25.889227 -7.16432,-7.164315 -15.79406,-10.746472 -25.88923,-10.746472 -10.09517,0 -18.72491,3.582157 -25.88923,10.746472 -7.16431,7.164314 -10.74647,15.794057 -10.74647,25.889227 0,10.09517 3.58216,18.724913 10.74647,25.889227 7.16432,7.164315 15.79406,10.746472 25.88923,10.746472 z m 0,12.211898 c -13.5145,0 -25.03472,-4.762314 -34.56065,-14.288247 -9.52464,-9.52463 -14.28695,-21.044848 -14.28695,-34.55935 0,-13.514502 4.76231,-25.03472 14.28695,-34.55935 9.52593,-9.525933 21.04615,-14.2882483 34.56065,-14.2882483 13.5145,0 25.03342,4.7623153 34.55935,14.2882483 9.52463,9.52463 14.28825,21.044848 14.28825,34.55935 0,13.514502 -4.76362,25.03472 -14.28825,34.55935 -9.52593,9.525933 -21.04485,14.288247 -34.55935,14.288247 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path8" />
+                    <path
+                        d="m 686.31397,27.421017 c -5.94248,5.942473 -8.91371,13.106787 -8.91371,21.492943 v 55.07534 h -12.2119 V 6.2941047 h 12.2119 V 19.116925 l 0.36603,-0.366031 c 6.83866,-6.838664 14.85748,-10.8689167 24.05777,-12.090758 1.9539,-0.2435867 3.98857,-0.3660313 6.10529,-0.3660313 4.804,0 9.32143,0.691682 13.55489,2.0763486 l -3.90781,11.6009787 c -3.01162,-0.976952 -6.22774,-1.465428 -9.64708,-1.465428 -2.11672,0 -4.15139,0.203206 -6.10529,0.610921 -5.86172,1.057713 -11.03175,3.825744 -15.51009,8.304092 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path9" />
+                    <path
+                        d="m 795.00052,42.929803 c -1.79107,-5.047585 -4.72193,-9.606694 -8.79256,-13.677327 -7.16432,-7.164315 -15.79406,-10.746472 -25.88923,-10.746472 -7.65279,0 -15.06069,3.582157 -22.22501,10.746472 -4.07063,4.070633 -7.00149,8.629742 -8.79256,13.677327 z m -67.65327,12.2119 c 0,10.09517 3.58216,18.724913 10.74647,25.889227 7.16432,7.164315 15.79406,10.746472 25.88923,10.746472 10.09517,0 18.72491,-3.582157 25.88923,-10.746472 2.27955,-2.279555 4.19308,-4.681554 5.73926,-7.204695 l 11.84587,3.907808 c -2.27955,4.31422 -5.25079,8.304092 -8.91501,11.96701 -9.52463,9.525933 -21.04485,14.288247 -34.55935,14.288247 -13.5145,0 -25.03472,-4.762314 -34.55935,-14.288247 -9.52593,-9.52463 -14.28825,-21.044848 -14.28825,-34.55935 0,-13.514502 4.76232,-25.03472 14.28825,-34.55935 9.52463,-9.525933 19.82301,-14.2882483 30.89513,-14.2882483 13.5145,0 25.03472,4.7623153 34.56065,14.2882483 9.52463,9.52463 14.28695,21.044848 14.28695,34.55935 z"
+                        style="fill-rule:nonzero;stroke-width:1.3026" id="path10" />
+                </g>
+                <g style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5" id="g17"
+                    transform="matrix(0.81893173,0,0,0.81893173,105.60597,649.87575)">
+                    <g transform="translate(-225.971,-511.486)" id="g14">
+                        <g transform="matrix(1.27037,0,0,1.27037,-167.056,379.309)" id="g13">
+                            <g id="Guilia-logo-icon.svg">
+                                <g id="g12">
+                                    <g id="g11">
+                                        <g id="Untitled.pdf">
+                                            <g transform="matrix(-1,0,0,1,1239.65,-378.174)" id="g1-5">
+                                                <circle cx="619.82703" cy="573.08698" r="12.5" id="circle1" />
+                                            </g>
+                                            <g transform="matrix(0.993951,0,0,1,611.431,428.112)" id="g3">
+                                                <g transform="scale(345.98)" id="g2">
+                                                    <rect x="0" y="-0.58600003" width="0.048999999" height="0.58600003"
+                                                        style="fill-rule:nonzero" id="rect1" />
+                                                </g>
+                                            </g>
+                                            <g transform="matrix(0.993951,0,0,1,611.347,360.534)" id="g5">
+                                                <g transform="scale(345.98)" id="g4">
+                                                    <path
+                                                        d="M 0,-0.391 H 0.049 V 0 H 0 Z m 0.024,-0.055 c -0.008,0 -0.015,-0.003 -0.021,-0.009 -0.006,-0.005 -0.009,-0.013 -0.009,-0.021 0,-0.009 0.003,-0.016 0.009,-0.022 0.006,-0.006 0.013,-0.009 0.021,-0.009 0.009,0 0.016,0.003 0.022,0.009 0.006,0.006 0.009,0.013 0.009,0.022 0,0.008 -0.003,0.016 -0.009,0.021 -0.006,0.006 -0.013,0.009 -0.022,0.009 z"
+                                                        style="fill-rule:nonzero" id="path3-6" />
+                                                </g>
+                                            </g>
+                                            <g transform="matrix(0.993951,0,0,1,510.682,360.534)" id="g7">
+                                                <g transform="scale(345.98)" id="g6">
+                                                    <path
+                                                        d="M 0.05,-0.05 C 0.017,-0.083 0,-0.124 0,-0.171 v -0.22 h 0.049 v 0.22 c 0,0.034 0.012,0.063 0.035,0.087 0.024,0.023 0.053,0.035 0.087,0.035 0.034,0 0.063,-0.012 0.086,-0.035 0.024,-0.024 0.036,-0.053 0.036,-0.087 v -0.22 h 0.049 v 0.22 c 0,0.047 -0.017,0.088 -0.05,0.121 C 0.258,-0.017 0.218,0 0.171,0 0.124,0 0.083,-0.017 0.05,-0.05 Z"
+                                                        style="fill-rule:nonzero" id="path5-7" />
+                                                </g>
+                                            </g>
+                                            <g transform="matrix(0.993951,0,0,1,391.672,360.536)" id="g9">
+                                                <g transform="scale(345.98)" id="g8">
+                                                    <path
+                                                        d="m 0.342,-0.325 v -0.066 h 0.049 v 0.342 c 0,0.054 -0.019,0.1 -0.058,0.138 C 0.295,0.127 0.249,0.146 0.195,0.146 0.141,0.146 0.095,0.127 0.057,0.089 0.044,0.077 0.034,0.063 0.025,0.049 H 0.086 C 0.088,0.051 0.09,0.053 0.092,0.055 0.12,0.083 0.155,0.098 0.195,0.098 0.236,0.098 0.27,0.083 0.299,0.055 0.327,0.026 0.342,-0.008 0.342,-0.049 V -0.066 C 0.339,-0.063 0.336,-0.06 0.333,-0.057 0.295,-0.019 0.249,0 0.195,0 0.141,0 0.095,-0.019 0.057,-0.057 0.019,-0.095 0,-0.141 0,-0.195 c 0,-0.054 0.019,-0.1 0.057,-0.138 0.038,-0.039 0.084,-0.058 0.138,-0.058 0.054,0 0.1,0.019 0.138,0.058 0.003,0.002 0.006,0.005 0.009,0.008 z m 0,0.131 V -0.197 C 0.341,-0.236 0.327,-0.271 0.299,-0.299 0.27,-0.327 0.236,-0.342 0.195,-0.342 c -0.04,0 -0.075,0.015 -0.103,0.043 -0.029,0.029 -0.043,0.063 -0.043,0.104 0,0.04 0.014,0.075 0.043,0.103 0.028,0.029 0.063,0.043 0.103,0.043 0.041,0 0.075,-0.014 0.104,-0.043 0.028,-0.028 0.042,-0.062 0.043,-0.102 z"
+                                                        style="fill-rule:nonzero" id="path7-9" />
+                                                </g>
+                                            </g>
+                                            <g transform="translate(0,-156.065)" id="g10">
+                                                <rect x="327.40799" y="278.13901" width="377.19101" height="367.78699"
+                                                    style="fill:none;stroke:#000000;stroke-width:20px" id="rect9" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <!-- <svg class="h-16 md:h-24" width="100%" height="100%" viewBox="0 0 525 514" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+            xmlns:serif="http://www.serif.com/"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
+            <g transform="matrix(1,0,0,1,-225.971,-511.486)">
+                <g transform="matrix(1.27037,0,0,1.27037,-167.056,379.309)">
+                    <g id="Guilia-logo-icon.svg">
+                        <g>
+                            <g>
+                                <g id="Untitled.pdf">
+                                    <g transform="matrix(-1,0,0,1,1239.65,-378.174)">
+                                        <circle cx="619.827" cy="573.087" r="12.5" />
+                                    </g>
+                                    <g transform="matrix(0.993951,0,0,1,611.431,428.112)">
+                                        <g transform="matrix(345.98,0,0,345.98,0,0)">
+                                            <rect x="0" y="-0.586" width="0.049" height="0.586"
+                                                style="fill-rule:nonzero;" />
+                                        </g>
+                                    </g>
+                                    <g transform="matrix(0.993951,0,0,1,611.347,360.534)">
+                                        <g transform="matrix(345.98,0,0,345.98,0,0)">
+                                            <path
+                                                d="M0,-0.391L0.049,-0.391L0.049,-0L0,-0L0,-0.391ZM0.024,-0.446C0.016,-0.446 0.009,-0.449 0.003,-0.455C-0.003,-0.46 -0.006,-0.468 -0.006,-0.476C-0.006,-0.485 -0.003,-0.492 0.003,-0.498C0.009,-0.504 0.016,-0.507 0.024,-0.507C0.033,-0.507 0.04,-0.504 0.046,-0.498C0.052,-0.492 0.055,-0.485 0.055,-0.476C0.055,-0.468 0.052,-0.46 0.046,-0.455C0.04,-0.449 0.033,-0.446 0.024,-0.446Z"
+                                                style="fill-rule:nonzero;" />
+                                        </g>
+                                    </g>
+                                    <g transform="matrix(0.993951,0,0,1,510.682,360.534)">
+                                        <g transform="matrix(345.98,0,0,345.98,0,0)">
+                                            <path
+                                                d="M0.05,-0.05C0.017,-0.083 0,-0.124 0,-0.171L0,-0.391L0.049,-0.391L0.049,-0.171C0.049,-0.137 0.061,-0.108 0.084,-0.084C0.108,-0.061 0.137,-0.049 0.171,-0.049C0.205,-0.049 0.234,-0.061 0.257,-0.084C0.281,-0.108 0.293,-0.137 0.293,-0.171L0.293,-0.391L0.342,-0.391L0.342,-0.171C0.342,-0.124 0.325,-0.083 0.292,-0.05C0.258,-0.017 0.218,-0 0.171,-0C0.124,-0 0.083,-0.017 0.05,-0.05Z"
+                                                style="fill-rule:nonzero;" />
+                                        </g>
+                                    </g>
+                                    <g transform="matrix(0.993951,0,0,1,391.672,360.536)">
+                                        <g transform="matrix(345.98,0,0,345.98,0,0)">
+                                            <path
+                                                d="M0.342,-0.325L0.342,-0.391L0.391,-0.391L0.391,-0.049C0.391,0.005 0.372,0.051 0.333,0.089C0.295,0.127 0.249,0.146 0.195,0.146C0.141,0.146 0.095,0.127 0.057,0.089C0.044,0.077 0.034,0.063 0.025,0.049L0.086,0.049C0.088,0.051 0.09,0.053 0.092,0.055C0.12,0.083 0.155,0.098 0.195,0.098C0.236,0.098 0.27,0.083 0.299,0.055C0.327,0.026 0.342,-0.008 0.342,-0.049L0.342,-0.066C0.339,-0.063 0.336,-0.06 0.333,-0.057C0.295,-0.019 0.249,-0 0.195,-0C0.141,-0 0.095,-0.019 0.057,-0.057C0.019,-0.095 0,-0.141 0,-0.195C0,-0.249 0.019,-0.295 0.057,-0.333C0.095,-0.372 0.141,-0.391 0.195,-0.391C0.249,-0.391 0.295,-0.372 0.333,-0.333C0.336,-0.331 0.339,-0.328 0.342,-0.325ZM0.342,-0.194L0.342,-0.197C0.341,-0.236 0.327,-0.271 0.299,-0.299C0.27,-0.327 0.236,-0.342 0.195,-0.342C0.155,-0.342 0.12,-0.327 0.092,-0.299C0.063,-0.27 0.049,-0.236 0.049,-0.195C0.049,-0.155 0.063,-0.12 0.092,-0.092C0.12,-0.063 0.155,-0.049 0.195,-0.049C0.236,-0.049 0.27,-0.063 0.299,-0.092C0.327,-0.12 0.341,-0.154 0.342,-0.194Z"
+                                                style="fill-rule:nonzero;" />
+                                        </g>
+                                    </g>
+                                    <g transform="matrix(1,0,0,1,0,-156.065)">
+                                        <rect x="327.408" y="278.139" width="377.191" height="367.787"
+                                            style="fill:none;stroke:black;stroke-width:20px;" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg> -->
+    </header>
+
+    <!-- Social Links Section -->
+    <section class="bg-[var(--color-soft-taupe)] py-6 px-6 md:px-16">
+        <div class="max-w-md mx-auto text-center">
+            <div class="flex justify-center space-x-4">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/guiliastore" target="_blank"
+                    class="bg-pink-500 p-3 rounded-full hover:bg-pink-600 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.6.6.3 1 .7 1.4 1.4.3.5.5 1.3.6 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.6 2.5-.3.6-.7 1-1.4 1.4-.5.3-1.3.5-2.5.6-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.6-.6-.3-1-.7-1.4-1.4-.3-.5-.5-1.3-.6-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .6-2.5.3-.6.7-1 1.4-1.4.5-.3 1.3-.5 2.5-.6C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.7.4 3.9.9c-.9.4-1.7 1.1-2.3 2.3-.5.8-.7 1.8-.8 3.1C.7 8.3.7 8.7.7 12s0 3.7.1 4.9c.1 1.3.3 2.3.8 3.1.6 1.2 1.4 1.9 2.3 2.3.8.5 1.8.7 3.1.8C8.3 23.3 8.7 23.3 12 23.3s3.7 0 4.9-.1c1.3-.1 2.3-.3 3.1-.8.9-.4 1.7-1.1 2.3-2.3.5-.8.7-1.8.8-3.1.1-1.3.1-1.7.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.3-.8-3.1-.6-1.2-1.4-1.9-2.3-2.3-.8-.5-1.8-.7-3.1-.8C15.7.7 15.3.7 12 .7zm0 5.8a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm0 9a3.5 3.5 0 110-7 3.5 3.5 0 010 7zm5.5-9.6a1.3 1.3 0 11-2.6 0 1.3 1.3 0 012.6 0z" />
+                    </svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/guiliastore" target="_blank"
+                    class="bg-blue-600 p-3 rounded-full hover:bg-blue-700 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M22 12a10 10 0 10-11.6 9.9v-7h-2v-2.9h2v-2.2c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2v1.9h2.2l-.4 2.9h-1.8v7A10 10 0 0022 12z" />
+                    </svg>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@guiliastore" target="_blank"
+                    class="bg-black p-3 rounded-full hover:bg-gray-900 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M16 8.3c1 .7 2.2 1.1 3.5 1.1V6.7c-1.3 0-2.5-.4-3.5-1.1V14c0 2.5-2 4.5-4.5 4.5S7.5 16.5 7.5 14s2-4.5 4.5-4.5c.2 0 .5 0 .7.1v-2c-.2 0-.5-.1-.7-.1A6.5 6.5 0 005 14a6.5 6.5 0 006.5 6.5A6.5 6.5 0 0018 14V8.3h-2z" />
+                    </svg>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/910891732" target="_blank"
+                    class="bg-green-500 p-3 rounded-full hover:bg-green-600 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M17.5 14.3c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2-.3.3-.6.1a7.7 7.7 0 01-2.3-1.4 8.4 8.4 0 01-1.6-2c-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.3c-.2-.4-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 3s1.2 3.5 1.3 3.7 2.3 3.5 5.6 4.9a19 19 0 002.8 1c1.2.4 2.3.3 3.2.2 1-.2 1.8-.9 2.1-1.7.3-.8.3-1.6.2-1.7-.2-.2-.3-.3-.6-.4zM12 2a10 10 0 00-8.5 15.4L2 22l4.8-1.5A10 10 0 1012 2z" />
+                    </svg>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:support@guiliastore.com"
+                    class="bg-gray-600 p-3 rounded-full hover:bg-gray-700 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-[var(--color-light-neutral)]">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col items-center text-center fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Dá forma ao que sentes. Wear your story.</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-xl">Na Guilia, transformamos momentos especiais em peças únicas.
+                Grava fotografias, nomes, datas ou palavras com significado. Mantém contigo o que mais importa, todos os
+                dias.</p>
+            <a href="https://guiliastore.com" target="_blank"
+                class="bg-[var(--color-primary)] text-white px-8 py-3 rounded-lg transform transition-transform duration-300 hover:scale-105 hover:bg-[var(--color-soft-neutral)]">
+                Explorar loja
             </a>
         </div>
+        <img src="https://i.etsystatic.com/46167993/r/il/5db144/7351528541/il_1588xN.7351528541_th7c.jpg" alt="Joias"
+            class="w-full object-cover h-80 md:h-96 mt-6 fade-in-up">
+    </section>
+
+    <!-- Featured Products -->
+    <!-- <section id="products" class="py-16 px-6 md:px-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Produtos em Destaque</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://via.placeholder.com/400x400" alt="Produto 1" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Colar Personalizado</h3>
+          <a href="#" class="text-yellow-500 hover:underline">Ver Detalhes</a>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://via.placeholder.com/400x400" alt="Produto 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Pulseira Gravável</h3>
+          <a href="#" class="text-yellow-500 hover:underline">Ver Detalhes</a>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://via.placeholder.com/400x400" alt="Produto 3" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Vela Artesanal</h3>
+          <a href="#" class="text-yellow-500 hover:underline">Ver Detalhes</a>
+        </div>
+      </div>
     </div>
+  </section> -->
+
+    <!-- About Section -->
+    <section class="py-16 px-6 md:px-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">A Nossa História</h2>
+            <p class="text-gray-700 text-lg">
+                Desde 2021, criamos peças que transmitem amor e autenticidade, sempre com atenção aos detalhes e carinho
+                em cada criação. Cada colar, pulseira ou vela conta uma história única, pensada para quem valoriza o que
+                é especial.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer with social icons -->
+    <footer class="bg-white border-t mt-16 py-6">
+        <div
+            class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0 space-y-4 md:space-y-0">
+            <p class="text-gray-600 text-center md:text-left">© 2021 guiliastore. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
